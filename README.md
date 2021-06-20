@@ -87,8 +87,8 @@ The following screenshot displays the result of running `docker ps` after succes
 This ELK server is configured to monitor the following machines: 
 | Name     | IP Addresses |
 |----------|---------------------|
-| Web-1    | 10.1.0.4             |
-| Web-2    | 10.1.0.4             |
+| Web-1    | 10.1.0.5             |
+| Web-2    | 10.1.0.6             |
 
 We have installed the following Beats on these machines:
 - Filebeat
