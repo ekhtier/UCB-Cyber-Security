@@ -109,7 +109,7 @@ SSH into the control node and follow the steps below:
 
 We need to run the following commands to configure ELK server and monitor log files in Kibana portal. 
 
-- ssh -i ~/.ssh/id_rsa azadmin@168.62.218.185
+- ssh -i ~/.ssh/id_rsa azadmin@[jumpbox public IP]
 - sudo docker container start nervous_wilbur
 - sudo docker container attach nervous_wilbur
 - cd /etc/ansible/
