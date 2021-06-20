@@ -84,10 +84,11 @@ The following screenshot displays the result of running `docker ps` after succes
 ![alt text](https://github.com/ekhtier/UCB-Cyber-Security/blob/main/Images/docker_ps_output.PNG)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines: | Machine        | IP Adress  | 
-| ------------- |-------------| 
-| Web-1| 10.1.0.5| 
-| Web-2| 10.1.0.6      | 
+This ELK server is configured to monitor the following machines: 
+| Name     | IP Addresses |
+|----------|---------------------|
+| Web-1    | 10.1.0.4             |
+| Web-2    | 10.1.0.4             |
 
 We have installed the following Beats on these machines:
 - Filebeat
