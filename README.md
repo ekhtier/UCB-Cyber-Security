@@ -8,11 +8,11 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
 
-  -[filebeat-config](Ansible/filebeat-config.yml)
-  -[filebeat-playbook](Ansible/filebeat-playbook.yml)
-  -[metricbeat-config](Ansible/metricbeat-config.yml)
-  -[metricbeat-playbook](Ansible/metricbeat-playbook.yml)
-  -[install-elk](Ansible/install-elk.yml)
+  - [filebeat-config](Ansible/filebeat-config.yml)
+  - [filebeat-playbook](Ansible/filebeat-playbook.yml)
+  - [metricbeat-config](Ansible/metricbeat-config.yml)
+  - [metricbeat-playbook](Ansible/metricbeat-playbook.yml)
+  - [install-elk](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -54,7 +54,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
 - Admin's public IP address
 
 Machines within the network can only be accessed by SSH.
-- Only Jump box provisioner was allowed to access ELK VM and its IP is 10.1.0.4
+- Only Jump box provisioner was allowed to access ELK VM and its IP is 10.2.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -63,7 +63,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | Admin's Public IP    |
 | Web-1    | No                  | 10.1.0.4             |
 | Web-2    | No                  | 10.1.0.4             |
-  Elk Server Yes				 Admin's Public IP 10.1.0.4
+| Elk Server| Yes                  | Admin's Public IP|
 
 ### Elk Configuration
 
@@ -84,9 +84,8 @@ The following screenshot displays the result of running `docker ps` after succes
 ![alt text](https://github.com/ekhtier/UCB-Cyber-Security/blob/main/Images/docker_ps_output.PNG)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- | Machine        | IP Adress  | 
-| ------------- |:-------------:| 
+This ELK server is configured to monitor the following machines: | Machine        | IP Adress  | 
+| ------------- |-------------| 
 | Web-1| 10.1.0.5| 
 | Web-2| 10.1.0.6      | 
 
@@ -95,7 +94,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat is a lightweight shipper that monitor log files, reads log for new contents and forwards new log data to Elasticsearch or Logstash. Filebeat logs information about the file system.
+- Filebeat is a lightweight shipper that monitors log files, reads log for new contents and forwards new log data to Elasticsearch or Logstash. Filebeat logs information about the file system.
 - Metric beat collects metric and statistics from the operating system and services. It generates report on CPU usage, memeory usage etc.  
  
 
