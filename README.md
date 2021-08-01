@@ -1,4 +1,4 @@
-# UC Berkeley Cyber Security Bootcamp Project 1
+# UC Berkeley Cyber Security Project 1
 ## Authored by Sheikh Ahmed
 ## Automated ELK Stack Deployment
 
